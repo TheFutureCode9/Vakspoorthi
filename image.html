@@ -14,43 +14,39 @@
   </head>
 
   <body>
-    <div class="container">
-  
-      <center>
-        <h3 class="btn btn-default heading">COLOUR RECOGNITION</h3>
-        <br><br>
-  
-        <p style="font-size: 22px;">Model is trained to identify basic colours </p>
-  
-        <!--<b class="name_of_objects">5</b>-->
-  
-        <label>Webcam View - </label>
-        <div id="camera"></div>
-        <br><br>
-        <div id="result_area">
-        <div id="result"></div>
-        <div id="result_area"></div>
-        <br><br>
-        <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
-        <br><br>
-        <button onclick="check();" class="btn btn-success">Identify Image</button>
-        <br><br>
-  
-        <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
-        <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
-      </center>
-
-    </div>
-    <a href="index.html" class="btn2 ">Go to Pronounciation screen</a>
 
 
+<div class="container">
+  
+  <button onclick="back()" style="float:right;background-color:pink">BACK</button>
+    <center>
+    <br>
+    <br>
 
-    <div class="col-xs-12 copy_right_footer">
-      Developed by - Anushkaa KS
-    </div>
-<script src="code.js"></script>
-  </body>
+      <h3 class="btn-primary heading">COLOUR RECOGNITION</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify basic colours </p>
+
+      <!--<b class="name_of_objects">5</b>-->
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <div id="result_area">
+      <div id="result"></div>
+      <div id="result_area"></div>
+      <br><br>
+      <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+      <br><br>
+      <button onclick="check();" class="btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+    </center>
+
+  </div>
+  <script src="image.js"></script>
+</body>
 </html>
-
-
-
